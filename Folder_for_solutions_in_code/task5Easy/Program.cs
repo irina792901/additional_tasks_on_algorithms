@@ -10,8 +10,8 @@ using static System.Console;
 int[] array = new int[10]; 
 int size= array.Length;
 int index = 0;
-int sum = 0;
-int mult = 1;
+double sum = 0;
+double mult = 1;
 while (index < size)
 {
     WriteLine("Введите целое число для наполнения массива ");
@@ -20,10 +20,10 @@ while (index < size)
     mult*=array[index];
     index++;
 }
-int Sar = sum/size;
-double Sgeo = mult,; // TO
+double Sar = sum/size;
+double Sgeo = Math.Pow(mult, 1/size);
 index = 0;
-int sumEl = 0;
+double sumEl = 0;
 while (index<size)
 {
     if (array[index]>Sgeo && array[index]<Sar) sumEl+=array[index];
