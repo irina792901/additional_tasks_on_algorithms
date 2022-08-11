@@ -10,7 +10,7 @@ Clear();
 WriteLine("Введите натуральное число больше 5: ");
 int N = Convert.ToInt32(ReadLine());
 int n = 0;
-double sum = 0;
+int sum = 0;
 int mult = 1;
 while (n<N) 
 {
@@ -19,5 +19,5 @@ while (n<N)
     mult*=n;
 }
 double A=sum/N;
-double G = Math.Pow(mult, 1/N);//не работает, в ответ выбрасывает значение 1 при любых N
-WriteLine($"{A}, {G}, {A/G}");
+double G = Math.Pow(mult, (double)1/N);
+WriteLine($"{A},  {G:f2},  {A/G:f2}");

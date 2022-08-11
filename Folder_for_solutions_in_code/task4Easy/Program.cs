@@ -10,7 +10,7 @@ using static System.Console;
 int[] array = new int[10]; 
 int size= array.Length;
 int index = 0;
-int sum = 0;
+double sum = 0;
 string answer = "Нет";
 while (index < size)
 {
@@ -19,7 +19,7 @@ while (index < size)
     sum += array[index];
     index++;
 }
-int arg = sum/size;
+double arg = sum/size;
 index = 0;
 while (index<size)
 {
